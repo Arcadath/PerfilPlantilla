@@ -10,6 +10,7 @@
 <%@page import="java.sql.ResultSet"%>
 <%@page import="connection.base"%>
 <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 	<head>
 		<link href="https://fonts.googleapis.com/css?family=Sora&display=swap" rel="stylesheet" />
@@ -18,41 +19,26 @@
 	</head>
 	<body>
 		<!--Se inicia la Plantilla-->
-		<main class="Contenido">
-			
-                            <%
-                                String qry="select * from usuario";
-                                ResultSet data = sql.executeQuary(qry);
-                                while(data.next()){
-                            %>
-                            <!-- Espacio para la imagen de usuario -->
+		<div class="Contenido">
+			<div class="Perfil flex">
 				<div class="ImagendeUsuarios">
+					<a href=""><img src="images/aaaa.png" class="EditarPerfil"/></a>
 				</div>
-				<div>
-                                    <!-- Aqui muestra el nombre del usuario -->
-                                    <span class="Username"><%out.print(data.getString(1)%></span>
-				</div>
-				<div>
-                                    <span class="Amigos">Amigos</span>
-				</div>
+				<div class="flex">
+					<span class="Username">Véctooor</span>
+					<span class="Amigos">Amigos</span>
+
 				<!--Aqui esta el recuadro de cantidad de amigos-->
-				<div class="RecuadroA">
-                                    <span class="NumeroA"><%out.print(data.getInt(2)%>"</span>
+				<div class="RecuadroA flex">
+					<span class="NumeroA">1.2M</span>
 				</div>
-				<div>
-                                    <span class="Grupos">Grupos</span>
+					<span class="Grupos">Grupos</span>
 				</div>
-                                <!-- En este esoacio deberia de estar Grupos -->
-                                 <%}%>
-				<div>
-                                    <!-- Imagen que redirecciona a editar perfil -->
-                                    <a href=""><img src="images/aaaa.png" class="EditarPerfil"/></a>
-				</div>
-			</
-                        <!--Aqui esta el espacio de las Publicaciones Realizadas-->
+			</div>
+			<!--Aqui esta el espacio de las Publicaciones Realizadas-->
 			<div class="Publicacion">
 				
 			</div>
-		</main>
+		</div>
 	</body>
 </html>
