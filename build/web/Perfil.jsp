@@ -36,8 +36,21 @@
 				</div>
 			</div>
 			<!--Aqui esta el espacio de las Publicaciones Realizadas-->
-			<div class="Publicacion">
-				
+			<div class="Publicacion flex">
+				<div class="ImagendeUsuarios">
+					<a href=""><img src="images/aaaa.png" class="EditarPerfil"/></a>
+				</div>
+				<div class="flex">
+					<span class="Username">Véctooor</span>
+						
+					<span class="Amigos">Amigos</span>
+
+				<!--Aqui esta el recuadro de cantidad de amigos-->
+				<div class="RecuadroA flex">
+					<span class="NumeroA">1.2M</span>
+				</div>
+					<span class="Grupos">Grupos</span>
+				</div>
 			</div>
 		</div>
 	</body>
